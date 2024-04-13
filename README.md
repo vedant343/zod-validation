@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zod Validation for MongoDB Project
 
-## Getting Started
+This project utilizes Zod for data validation and interacts with a MongoDB database. Below are key components and instructions for getting started.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Ensure Node.js and MongoDB are installed.
+- Clone the repository and install dependencies with `npm install`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project.
+- `npm start`: Start the production server.
+- `npm run lint`: Run ESLint for code linting.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Schemas
 
-## Learn More
+- `src/schemas/signUpSchema.ts`: Defines validation schema for user sign up.
+- `src/schemas/verifySchema.ts`: Defines validation schema for verification code.
+- `src/schemas/messageSchema.ts`: Defines validation schema for messages.
+- `src/schemas/signInSchema.ts`: Defines validation schema for user sign in.
+- `src/schemas/acceptMessageSchema.ts`: Defines validation schema for accepting messages.
 
-To learn more about Next.js, take a look at the following resources:
+## Models
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/model/User.ts`: Defines the User model schema for MongoDB.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Pages
 
-## Deploy on Vercel
+- `src/app/page.tsx`: Entry point for the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Configuration Files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `.eslintrc.json`: ESLint configuration.
+- `tsconfig.json`: TypeScript configuration.
+- `postcss.config.mjs`: PostCSS configuration.
+- `tailwind.config.ts`: Tailwind CSS configuration.
+
+## Additional Information
+
+- The project is based on Next.js.
+- Deployment can be done on Vercel.
+- Refer to the provided scripts and documentation for more details.
+
+For detailed deployment instructions, refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
