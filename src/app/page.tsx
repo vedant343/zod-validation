@@ -8,4 +8,4 @@ export default function Home() {
   );
 }
 
-//nextjs - Edge time framework 
+//nextjs - Edge time framework
